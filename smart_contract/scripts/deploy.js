@@ -4,7 +4,7 @@ const main = async () => {
 
   await transactionContract.deployed()
 
-  console.log('Transactions deployed to:', transactionContract.address)
+  console.log('Transactions.sol contract deployed to:', transactionContract.address)
 }
 
 ;(async () => {
