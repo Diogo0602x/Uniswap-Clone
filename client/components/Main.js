@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { RiSettings3Fill } from 'react-icons/ri'
 import { AiOutlineDown } from 'react-icons/ai'
 import ethLogo from '../assets/eth.png'
+import { useContext } from 'react'
+import { TransactionContext } from '../context/TransactionContext'
 
 const style = {
   wrapper: `w-screen flex items-center justify-center mt-14`,
