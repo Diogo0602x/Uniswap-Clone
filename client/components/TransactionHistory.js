@@ -17,7 +17,7 @@ const style = {
 
 const TransactionHistory = () => {
   const { isLoading, currentAccount } = useContext(TransactionContext)
-  const [transactionHistory, setTransactionHistory] = useState<any[]>([])
+  const [transactionHistory, setTransactionHistory] = useState([])
 
   useEffect(() => {
     ;(async () => {
