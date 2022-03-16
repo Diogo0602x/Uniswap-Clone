@@ -6,7 +6,7 @@ import { useContext } from 'react'
 import { TransactionContext } from '../context/TransactionContext'
 import Modal from 'react-modal'
 import { useRouter } from 'next/router'
-import { TransactionLoader } from '../components/TransactionLoader'
+import TransactionLoader from './TransactionLoader'
 
 Modal.setAppElement('#__next')
 
@@ -41,18 +41,19 @@ const customStyles = {
 }
 
 const Main = () => {
-  const { formData, handleChange, sendTransaction } = 
+  const { formData, handleChange, sendTransaction } =
     useContext(TransactionContext)
+  const router = useRouter()
 
-    const router = useRouter()
+  const handleSubmit = async (e) => {
+    const { addressTo, amount } = formData
+    e.preventDefault()
 
-    const handleSubmit = async (e) => {
-      const { addressTo, amount} = formData
-      e.preventDefault()
+    if (!addressTo || !amount) return
 
-      if(!addressTo || !amount) return
-      sendTransaction()
-    }
+    sendTransaction()
+  }
+
   return (
     <div className={style.wrapper}>
       <div className={style.content}>
@@ -93,8 +94,9 @@ const Main = () => {
           Confirm
         </div>
       </div>
+
       <Modal isOpen={!!router.query.loading} style={customStyles}>
-        { <TransactionLoader />}
+        <TransactionLoader />
       </Modal>
     </div>
   )
