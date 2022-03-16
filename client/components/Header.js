@@ -28,7 +28,8 @@ const Header = () => {
   const [userName, setUserName] = useState()
 
   useEffect(() => {
-    setUserName(`${currentAccount.slice(0, 7)}...${currentAccount.slice(35)}`)
+    if (!currentAccount) return 
+    setUserName(`${currentAccount.slice(0, 7)}...${currentAccount.slice(35)}`,)  
   }, [currentAccount])
 
   return (
