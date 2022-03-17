@@ -2,6 +2,7 @@
   "name": "hardhat-project",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
+<<<<<<< HEAD
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.0",
@@ -12,5 +13,13 @@
     "@babel/preset-env": "^7.16.11",
     "@sanity/base": "^2.29.1",
     "@sanity/client": "^3.2.0"
+=======
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.6.0",
+    "hardhat": "^2.9.1"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3"
+>>>>>>> 059bcacf7c0ea0a2cd4c9664b6d1709631f84e19
   }
 }
