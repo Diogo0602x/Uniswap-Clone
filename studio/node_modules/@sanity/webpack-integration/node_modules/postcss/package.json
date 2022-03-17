@@ -1,6 +1,6 @@
 {
   "name": "postcss",
-  "version": "8.4.8",
+  "version": "8.4.12",
   "description": "Tool for transforming styles with JS plugins",
   "engines": {
     "node": "^10 || ^12 || >=14"
@@ -53,10 +53,16 @@
     "manipulation",
     "transpiler"
   ],
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/postcss/"
-  },
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/postcss/"
+    },
+    {
+      "type": "tidelift",
+      "url": "https://tidelift.com/funding/github/npm/postcss"
+    }
+  ],
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
   "homepage": "https://postcss.org/",

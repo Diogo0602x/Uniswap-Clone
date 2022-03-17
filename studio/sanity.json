@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "Uniswap-clone"
+    "name": "uniswap-clone"
   },
   "api": {
-    "projectId": "kxsmyxmt",
+    "projectId": "o4vohdlc",
     "dataset": "production"
   },
   "plugins": [

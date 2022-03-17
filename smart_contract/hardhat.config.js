@@ -6,7 +6,7 @@ module.exports = {
     rinkeby: {
       url: 'https://eth-rinkeby.alchemyapi.io/v2/mEJIAuxHnE2HsvBATUIEBiTLrd-dN5X3',
       accounts: [
-        'f2679263aadf9db7949246a5265f7cf0b0aece610ba4d84dcfc9304ccd050d0c',
+        'ea19ec5ecb035b084b3f34c61066b1fe6daf6618b9bd5702525468b08d687af7',
       ],
     },
   },
